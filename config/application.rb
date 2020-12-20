@@ -10,6 +10,8 @@ module Sudokuass
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.action_dispatch.perform_deep_munge = false
+
 
     # Configuration for the application, engines, and railties goes here.
     #
