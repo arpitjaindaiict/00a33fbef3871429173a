@@ -7,7 +7,7 @@ class SudokuController < ApplicationController
 		data = params[:data]
 		s = SudokuHelper::Sudoku.new(data)
 		s.solve
-		render json: s.problem
+		render json: {"solution": s.problem}
 	end
 
 
